@@ -12,7 +12,8 @@ class App < Sinatra::Base
   end
   
   get "/say/:number/:phrase" do
-  	
+  	params[:phrase].each_with_index do |s, i|
+  	  
   end
 
 end
