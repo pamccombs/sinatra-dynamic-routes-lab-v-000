@@ -12,9 +12,13 @@ class App < Sinatra::Base
   end
   
   get "/say/:number/:phrase" do
-  	params[:phrase].each_with_index do |s, i|
-  	  i.to_s
-  	end
+  answer = ''
+
+    params[:number].to_i.times do
+      answer += params[:phrase]
+    end
+
+    answer
   end
 
 end
