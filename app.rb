@@ -20,5 +20,9 @@ class App < Sinatra::Base
 
     answer
   end
+  
+  get "/" do
+    
+  end
 
 end
