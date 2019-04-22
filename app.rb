@@ -12,7 +12,7 @@ class App < Sinatra::Base
   end
   
   get "/say/:number/:phrase" do
-  answer = ''
+  answer = answer.to_s
 
     params[:number].to_i.times do
       answer += params[:phrase]
